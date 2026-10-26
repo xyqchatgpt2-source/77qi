@@ -8,19 +8,19 @@
 ## 3.charles连接手机
   ### 3.1 charles上的配置
      （1）在 Charles 的菜单栏上选择 “Proxy”->”Proxy Settings”，填入代理端口 8888（或者自定义，前提是不能和系统已占用端口冲突），并且勾上 “Enable transparent HTTP proxying”
-       <img width="1818" height="1334" alt="image" src="https://github.com/user-attachments/assets/4d95302e-bd89-4579-a93c-926940448362" />
+ <img width="1818" height="1334" alt="image" src="https://github.com/user-attachments/assets/4d95302e-bd89-4579-a93c-926940448362" />
      （2）在Mac上配置Charles证书，Charles菜单栏中的Help——SSL Proxying——Install Charles Root Certificate ，如果证书不受信任，请更改为完全信任
-       <img width="1940" height="680" alt="image" src="https://github.com/user-attachments/assets/7960bbdd-2299-4670-9579-a58d7e43b0a2" />
-       <img width="1702" height="584" alt="image" src="https://github.com/user-attachments/assets/5414cff0-d69c-4c94-a2f9-27acd052e628" />
+ <img width="1940" height="680" alt="image" src="https://github.com/user-attachments/assets/7960bbdd-2299-4670-9579-a58d7e43b0a2" />
+ <img width="1702" height="584" alt="image" src="https://github.com/user-attachments/assets/5414cff0-d69c-4c94-a2f9-27acd052e628" />
       
  ### 3.2 手机上的配置
       （1）把charles的根证书下载到电脑上，通过其他软件 比如飞书或者wechat传给手机app，在手机上把根证书安装好，并在手机系统的设置里同意这个根证书，高版本ios：设置-通用-关于本机-滑倒最下面-证书信任设置-打开 Charles 开关
       （2）需要在charles上把手机的ip加入到可以同意抓包的ip里点击proxy-->Access Control Settings...
-        <img width="1432" height="1360" alt="image" src="https://github.com/user-attachments/assets/8d7b0e32-d15a-4cd6-95b8-8c8dd46f1ede" />
+ <img width="1432" height="1360" alt="image" src="https://github.com/user-attachments/assets/8d7b0e32-d15a-4cd6-95b8-8c8dd46f1ede" />
       （3）如果charles弹出是都要同意手机ip的抓包的弹窗，点击同意
-        <img width="1722" height="384" alt="image" src="https://github.com/user-attachments/assets/78cdc0c3-7263-4bdf-94bf-bdf16f9bb323" />
+   <img width="1722" height="384" alt="image" src="https://github.com/user-attachments/assets/78cdc0c3-7263-4bdf-94bf-bdf16f9bb323" />
       （4）在手机系统的设置里，进行配置代理的设置，设置端口和电脑的服务器（端口就是刚才设置的8888，要和charles设置的端口对的上）
-        <img width="1888" height="810" alt="image" src="https://github.com/user-attachments/assets/f9aa1b83-8513-465e-a28a-d675b2b44c29" />
+      <img width="1888" height="810" alt="image" src="https://github.com/user-attachments/assets/f9aa1b83-8513-465e-a28a-d675b2b44c29" />
         
 # 4.charles的使用
    ## 4.1Map Remote
@@ -29,7 +29,7 @@
     开启后：通过Charles后，向新远程地址请求
     
     选中Enable Map Remote→选中需要用到的map remote/点击add创建新的map remote→填写好要map remote的接口、通信协议、开发机的ip和端口号→点击ok
-    <img width="1174" height="1080" alt="image" src="https://github.com/user-attachments/assets/df9867b5-2334-44d9-b20d-b721873dae94" />
+  <img width="1174" height="1080" alt="image" src="https://github.com/user-attachments/assets/df9867b5-2334-44d9-b20d-b721873dae94" />
 
    ## 4.2Map Local
     将接口的请求重定向到本地文件，此类操作可称为“Mock接口”
@@ -38,14 +38,14 @@
     开启后：通过Charles后，由Charles直接返回文件中的接口响应，不再与服务器通信
     
     选中Enable Map Local→选中需要用到的map local/点击add创建新的map local→填写好要map local的接口、对应的本地文件→点击ok
-    <img width="1060" height="1088" alt="image" src="https://github.com/user-attachments/assets/8ed0fc78-2f05-4094-99b6-9e39d5d492d7" />
+ <img width="1060" height="1088" alt="image" src="https://github.com/user-attachments/assets/8ed0fc78-2f05-4094-99b6-9e39d5d492d7" />
 
   ## 4.3Rewrite
     rewrite功能重写对应的内容，主要可以对某些匹配请求的header、host、url、path、query param、response status、body进行rewrite。
     改写，即：将「符合匹配规则」的请求，进行地址'、请求参数、请求Header、请求体、响应状态、响应体的增加、修改或删除操作
 
     选中Enable Rewrite→选中需要用到的rewrite/点击add创建新的rewrite→填写好要rewrite的地址接口、需要修改的值和修改后的值→点击ok
-    <img width="626" height="522" alt="image" src="https://github.com/user-attachments/assets/169df105-bb3f-4129-b154-0a7940a25437" />
+   <img width="626" height="522" alt="image" src="https://github.com/user-attachments/assets/169df105-bb3f-4129-b154-0a7940a25437" />
     <img width="2260" height="1038" alt="image" src="https://github.com/user-attachments/assets/ec3f31d9-da64-4b5b-a859-ee91e38bd681" />
     <img width="1793" height="980" alt="image" src="https://github.com/user-attachments/assets/ad5be957-3d7c-432e-9334-164e8b2edfb9" />
 
